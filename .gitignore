@@ -41,6 +41,9 @@ build/Release
 node_modules/
 jspm_packages/
 
+# Desktop Services Store (iOS)
+.DS_Store/
+
 # TypeScript v1 declaration files
 typings/
 
