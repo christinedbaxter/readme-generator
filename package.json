@@ -3,7 +3,13 @@
   "version": "1.0.0",
   "description": "Creates a high-quality README for open source GitHub projects",
   "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
   "scripts": {
+    "start": "node index.js",
+    "start:dev":"nodemon index.js",
+    "debug": "npm run start:dev",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "baxters4karma",
