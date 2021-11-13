@@ -1,8 +1,8 @@
 const fs = require("fs");
 
-const writeFile = fileContent => {
+const writeToFile = fileContent => {
     return new Promise((resolve, reject) => {
-        fs.writeFile("./dist/index.html", fileContent, err => {
+        fs.writeFile("./test/README.md", fileContent, err => {
             // if there's an error, reject the Promise and send the error to the Promise's '.catch()' method
             if (err) {
                 reject(err);
@@ -38,4 +38,4 @@ const copyFile = () => {
     });
 };
 
-module.exports = { writeFile };
+module.exports = { writeToFile };
