@@ -1,9 +1,9 @@
-![License](https://img.shields.io/badge/license-APACHE%202.0-success)
-  # cccccccccccccccccccc
+
+  # README Generator
 
   ## Description
 
-  dddddddddddddddddddddddd
+  this is a short description of project
 
   [back to top](#table-of-contents)
 
@@ -27,20 +27,20 @@ node index.js
 ```
   
 Additional usage information is provided below, if needed.
-eeeeeeeeeeeeeeeeeeeeee
+your standard invoke by node index
 
 [back to top](#table-of-contents)
 
   ## License
 
-This project is licensed under the APACHE 2.0 license.
+This project is licensed under the NONE license.
 
 [back to top](#table-of-contents)
 
   ## Contributing
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](../code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./code_of_conduct.md)
 
-ffffffffffffffffffffff
+
 
 [back to top](#table-of-contents)
 
@@ -48,13 +48,13 @@ ffffffffffffffffffffff
 
 To run tests, run the following command:
 ```
-npm test
+npm test or npm debug
 ```
 [back to top](#table-of-contents)
 
   ## Questions 
 
-  If you have any questions about the repo, open an issue or contact me directly at bbbbbbbbbbbbbbbbbb. You can find more of my work at [baxters4karma](https://github.com/aaaaaaaaaaa/).
+  If you have any questions about the repo, open an issue or contact me directly at christine.d.baxter@live.com. You can find more of my work at [baxters4karma](https://github.com/baxters4karma/).
 
 [back to top](#table-of-contents)
   
