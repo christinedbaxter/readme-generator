@@ -1,9 +1,9 @@
 
-  # README Generator
+  # ccccccccccccccccc
 
   ## Description
 
-  this is a short description of project
+  ddddddddddddddd
 
   [back to top](#table-of-contents)
 
@@ -12,7 +12,7 @@
 
   ## Installation
 
-To install necessary dependencies, run the following command:
+To install necessary dependencies into the node_modules folder, run the following command:
 ```
 npm i
 ```
@@ -23,24 +23,24 @@ npm i
   
   The application is invoked by using the following command:
 ```
-node index.js
+node index
 ```
   
 Additional usage information is provided below, if needed.
-your standard invoke by node index
+eeeeeeeeeeeeeeeeeeeeeee
 
 [back to top](#table-of-contents)
 
   ## License
 
-This project is licensed under the NONE license.
+Not currently licensed.
 
 [back to top](#table-of-contents)
 
   ## Contributing
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](../code_of_conduct.md)
 
-
+ffffffffffffffffffff
 
 [back to top](#table-of-contents)
 
@@ -48,13 +48,13 @@ This project is licensed under the NONE license.
 
 To run tests, run the following command:
 ```
-npm test or npm debug
+npm test
 ```
 [back to top](#table-of-contents)
 
   ## Questions 
 
-  If you have any questions about the repo, open an issue or contact me directly at christine.d.baxter@live.com. You can find more of my work at [baxters4karma](https://github.com/baxters4karma/).
+  If you have any questions about the repo, open an issue or contact me directly at b@gmail.com. You can find more of my work at [baxters4karma](https://github.com/aaaaaaaaaaaaaaaaaaa/).
 
 [back to top](#table-of-contents)
   

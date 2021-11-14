@@ -8,7 +8,7 @@ const userQuestions = [
             if (nameInput) {
                 return true;
             } else {
-                console.log("Please enter your name!");
+                console.log("\nPlease enter your name!");
                 return false;
             }
         }
@@ -18,10 +18,10 @@ const userQuestions = [
         name: "userEmail",
         message: "What is your email address? (Required)",
         validate: nameInput => {
-            if (nameInput) {
+            if ((/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(nameInput))) {
                 return true;
             } else {
-                console.log("Please enter your email address!");
+                console.log("\nPlease enter a valid email address!");
                 return false;
             }
         }
@@ -38,7 +38,7 @@ const projectQuestions = [
             if (nameInput) {
                 return true;
             } else {
-                console.log("Please enter a project name!");
+                console.log("\nPlease enter a project name!");
                 return false;
             }
         }
@@ -51,7 +51,7 @@ const projectQuestions = [
             if (nameInput) {
                 return true;
             } else {
-                console.log("Please enter a short description!");
+                console.log("\nPlease enter a short description!");
                 return false;
             }
         }

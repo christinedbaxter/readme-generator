@@ -18,8 +18,18 @@ const renderLicenseBadge = (license) => {
     default:
       license = "NONE";
   }
-  
-  return license === "NONE" ? "" : `![License](https://img.shields.io/badge/license-${license}-success)`;
+
+  return license === "NONE" ? "" : `![License](https://img.shields.io/badge/license-${license}-success)`
+};
+
+// Create a function that returns the license section of README
+// If there is no license, return an empty string
+const renderLicenseSection = (license) => {
+  if (license === "NONE") {
+    return "Not currently licensed."
+  } else
+    renderLicenseBadge(license);
+    return `This project is licensed under the ${license} license.`
 }
 
 // Create a function to generate markdown for README
@@ -47,7 +57,7 @@ const generateMarkdownText = (data) => {
 
   ## Installation
 
-To install necessary dependencies, run the following command:
+To install necessary dependencies into the node_modules folder, run the following command:
 \`\`\`
 ${installDependency}
 \`\`\`
@@ -58,7 +68,7 @@ ${installDependency}
   
   The application is invoked by using the following command:
 \`\`\`
-node index.js
+node index
 \`\`\`
   
 Additional usage information is provided below, if needed.
@@ -68,7 +78,7 @@ ${repoInfoNeeded}
 
   ## License
 
-This project is licensed under the ${renderLicenseBadge(license)} license.
+${renderLicenseSection(license)}
 
 [back to top](#table-of-contents)
 
