@@ -1,4 +1,3 @@
-const { template } = require("lodash");
 
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
@@ -7,12 +6,26 @@ const renderLicenseBadge = (license) => {
 }
 
 // Create a function to generate markdown for README
-const generateMarkdown = (data) => {
-    console.log(data);
-  return `# ${data.title}
+const generateMarkdownText = (data) => {
+  
+  const {
+    githubUserName, userEmail,
+    projectData: [
+      {
+        projectName, description, license, installDependency, runTest, repoInfoNeeded, projectContributions }
+    ]
+  } = data;
 
-`;
-}
+  return `${renderLicenseBadge(license)}
+  # ${projectName}
 
-module.exports = generateMarkdown;
+  ## GitHub Username:
+
+  ${githubUserName}
+  
+  `
+
+};
+
+module.exports = generateMarkdownText;
 

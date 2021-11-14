@@ -3,7 +3,7 @@ const inquirer = require("inquirer");
 const questions = require("./src/questions");
 const { consoleUserText, consoleProjectText, consoleAppStart } =
     require("./src/consoleLogText");
-const generateMarkdown = require("./src/generateMarkdownText");
+const generateMarkdownText = require("./src/generateMarkdownText");
 const { writeToFile } = require("./utils/generate-file");
 
 const promptUser = () => {
@@ -14,7 +14,7 @@ const promptUser = () => {
 
 const promptProject = readMeFileData => {
     console.log(`${consoleProjectText}`);
-    // If there's no 'projects' array property, create one
+    // If there's no 'projectData' array property, create one
     if (!readMeFileData.projectData) {
         readMeFileData.projectData = [];
     }
@@ -23,7 +23,7 @@ const promptProject = readMeFileData => {
         .then(projectData => {
             readMeFileData.projectData.push(projectData);
             return readMeFileData;
-        })
+        })        
 };
 
 function main() {
@@ -31,8 +31,8 @@ function main() {
     promptUser()
         .then(promptProject)
         .then(readMeFileData => {
-            return generateMarkdown(readMeFileData);
-        })
+            return generateMarkdownText(readMeFileData);
+        }) 
         .then(pageMarkdown => {
             return writeToFile(pageMarkdown);
         })
