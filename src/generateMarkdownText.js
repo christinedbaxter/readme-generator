@@ -2,6 +2,23 @@
 // Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = (license) => {
+  switch (license) {
+    case "MIT":
+      license = "MIT";
+      break;
+    case "APACHE 2.0":
+      license = "APACHE%202.0";
+      break;
+    case "GPL 3.0":
+      license = "GPL%203.0";
+      break;
+    case "BSD 3":
+      license = "BSD%203";
+      break;
+    default:
+      license = "NONE";
+  }
+  
   return license === "NONE" ? "" : `![License](https://img.shields.io/badge/license-${license}-success)`;
 }
 
@@ -56,7 +73,7 @@ This project is licensed under the ${license} license.
 [back to top](#table-of-contents)
 
   ## Contributing
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](./code_of_conduct.md)
 
 ${projectContributions}
 
