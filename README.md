@@ -26,8 +26,8 @@ npm i
 ##Review
 
 *Walk-through Videos*
-- [Generate README with License set to MIT]()
-- [Generate README with License set to NONE]()
+- [Generate README with License set to MIT](docs/README_License.gif)
+- [Generate README with License set to NONE](docs/README_NoLicense.gif)
 
 *File Generated Using this Application*
 - [Sample README.md](docs/Sample-README.md)
