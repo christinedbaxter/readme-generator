@@ -1,35 +1,47 @@
 //Include packages needed for this application
 const inquirer = require("inquirer");
 const questions = require("./src/questions");
-const consoleText = require("./src/consoleLogText");
-const generateMarkdownText = require("./src/generateMarkdownText");
+const { consoleUserText, consoleProjectText, consoleAppStart } =
+    require("./src/consoleLogText");
+const generateMarkdown = require("./src/generateMarkdownText");
 const { writeToFile } = require("./utils/generate-file");
 
 const promptUser = () => {
-    consoleText.consoleUserText;
-    return inquirer.prompt(questions.userQuestions)
+    console.log(`${consoleUserText}`);
+    return inquirer
+        .prompt(questions.userQuestions)
 };
 
 const promptProject = readMeFileData => {
-    consoleText.consoleProjectText;
+    console.log(`${consoleProjectText}`);
+    // If there's no 'projects' array property, create one
+    if (!readMeFileData.projectData) {
+        readMeFileData.projectData = [];
+    }
     return inquirer
         .prompt(questions.projectQuestions)
-        .then(projectData  = () =>  {            
+        .then(projectData => {
+            readMeFileData.projectData.push(projectData);
             return readMeFileData;
+        })
+};
+
+function main() {
+    `${consoleAppStart}`;
+    promptUser()
+        .then(promptProject)
+        .then(readMeFileData => {
+            return generateMarkdown(readMeFileData);
+        })
+        .then(pageMarkdown => {
+            return writeToFile(pageMarkdown);
+        })
+        .then(writeToFileResponse => {
+            console.log(writeToFileResponse);
+        })
+        .catch(err => {
+            console.log(err);
         });
 };
 
-promptUser()
-    .then(promptProject)
-    .then(readMeFileData => {
-        return generateMarkdownText(readMeFileData);
-    })
-    .then(pageMarkdown => {
-        return writeToFile(pageMarkdown);
-    })
-    .then(writeToFileResponse => {
-        console.log(writeToFileResponse);
-    })
-    .catch(err => {
-        console.log(err);
-    });
+main();

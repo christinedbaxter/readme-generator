@@ -1,26 +1,18 @@
 const { template } = require("lodash");
 
-// TODO: Create a function that returns a license badge based on which license is passed in
+// Create a function that returns a license badge based on which license is passed in
 // If there is no license, return an empty string
 const renderLicenseBadge = (license) => {
-  return license === "NONE"?"": `![License](https://img.shields.io/badge/license-${license}-)`
+  return license === "NONE" ? "" : `![License](https://img.shields.io/badge/license-${license}-success)`;
 }
 
-// TODO: Create a function that returns the license link
-// If there is no license, return an empty string
-function renderLicenseLink(license) {}
-
-// TODO: Create a function that returns the license section of README
-// If there is no license, return an empty string
-function renderLicenseSection(license) {}
-
-// TODO: Create a function to generate markdown for README
-function generateMarkdownText(data) {
+// Create a function to generate markdown for README
+const generateMarkdown = (data) => {
     console.log(data);
   return `# ${data.title}
 
 `;
 }
 
-module.exports = generateMarkdownText;
+module.exports = generateMarkdown;
 

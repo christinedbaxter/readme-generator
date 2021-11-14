@@ -1,16 +1,18 @@
-const consoleUserText = console.log(
+const consoleAppStart = console.log("Application has started...");
+
+const consoleUserText = 
     `
 ===========================
      User Information
 ===========================
-    `);
+    `;
 
-const consoleProjectText = console.log(
+const consoleProjectText = 
     `
 ===========================
     Project Information
 ===========================
     `
-);
+;
 
-module.exports = { consoleUserText, consoleProjectText };
+module.exports = { consoleAppStart, consoleUserText, consoleProjectText };
