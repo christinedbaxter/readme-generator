@@ -19,17 +19,17 @@ const renderLicenseBadge = (license) => {
       license = "NONE";
   }
 
-  return license === "NONE" ? "" : `![License](https://img.shields.io/badge/license-${license}-success)`
+  return license === "NONE" ? "" : `![License](https://img.shields.io/badge/license-${license}-success)`;
 };
 
 // Create a function that returns the license section of README
 // If there is no license, return an empty string
 const renderLicenseSection = (license) => {
   if (license === "NONE") {
-    return "Not currently licensed."
+    return "Not currently licensed.";
   } else
     renderLicenseBadge(license);
-    return `This project is licensed under the ${license} license.`
+    return `This project is licensed under the ${license} license.`;
 }
 
 // Create a function to generate markdown for README
@@ -83,7 +83,7 @@ ${renderLicenseSection(license)}
 [back to top](#table-of-contents)
 
   ## Contributing
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](../code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](../code_of_conduct.md#top)
 
 ${projectContributions}
 
@@ -99,7 +99,7 @@ ${runTest}
 
   ## Questions 
 
-  If you have any questions about the repo, open an issue or contact me directly at ${userEmail}. You can find more of my work at [baxters4karma](https://github.com/${githubUserName}/).
+  If you have any questions about the repo, open an issue or contact me directly at ${userEmail}. You can find more of my work at [${githubUserName}](https://github.com/${githubUserName}/).
 
 [back to top](#table-of-contents)
   `

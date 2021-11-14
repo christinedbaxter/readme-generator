@@ -1,9 +1,9 @@
 
-  # ccccccccccccccccc
+  # zzzzzzzzzzzzzzzzzzzz
 
   ## Description
 
-  ddddddddddddddd
+  aaaaaaaaaaaaaaaaaaaaaaaaaa
 
   [back to top](#table-of-contents)
 
@@ -27,7 +27,7 @@ node index
 ```
   
 Additional usage information is provided below, if needed.
-eeeeeeeeeeeeeeeeeeeeeee
+bbbbbbbbbbbbbbbbbbbbbbbb
 
 [back to top](#table-of-contents)
 
@@ -38,9 +38,9 @@ Not currently licensed.
 [back to top](#table-of-contents)
 
   ## Contributing
-[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](../code_of_conduct.md)
+[![Contributor Covenant](https://img.shields.io/badge/Contributor%20Covenant-2.1-4baaaa.svg)](../code_of_conduct.md#top)
 
-ffffffffffffffffffff
+ccccccccccccccccccccccccccc
 
 [back to top](#table-of-contents)
 
@@ -54,7 +54,7 @@ npm test
 
   ## Questions 
 
-  If you have any questions about the repo, open an issue or contact me directly at b@gmail.com. You can find more of my work at [baxters4karma](https://github.com/aaaaaaaaaaaaaaaaaaa/).
+  If you have any questions about the repo, open an issue or contact me directly at y@gmail.com. You can find more of my work at [xxxxxxxxxxxxxxxxxxx](https://github.com/xxxxxxxxxxxxxxxxxxx/).
 
 [back to top](#table-of-contents)
   
